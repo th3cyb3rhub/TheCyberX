@@ -1,64 +1,140 @@
-# ThecyberX
+# TheCyberX
 
 <p align="center">
-<b> ThecyberX: Cyber security web extension </b>
+  <img src="icons/icon.svg" alt="TheCyberX Logo" width="128" height="128">
 </p>
 
-![ThecyberX](img.png)
+<p align="center">
+  <strong>The All-in-One Pentesting Browser Extension</strong>
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#development">Development</a> •
+  <a href="#contributing">Contributing</a>
+</p>
 
 ---
 
-### 👇 Prerequisites
+## Features
 
-Before installation, please make sure you have already installed the following tools:
+**19 pentesting tools** organized in 4 categories:
 
-- [Git](https://git-scm.com/downloads)
-- [Nodejs](https://nodejs.org/en/download/)
+### 🔐 Core Tools
+- **Encoder/Decoder** - Base64, URL, HTML, Hex, Unicode, Binary
+- **Hasher** - MD5, SHA-1, SHA-256, SHA-512
+- **JWT Decoder** - Parse and validate tokens
+- **Payloads** - SQLi, XSS, LFI, SSTI, CMDi, XXE
+- **Google Dorks** - Dork generator with presets
 
----
+### 🛡️ Security Tools
+- **Reverse Shell** - 11 shell types (Bash, Python, PHP, etc.)
+- **CORS Checker** - Test CORS misconfigurations
+- **Header Analyzer** - Security headers analysis
+- **Cookie Editor** - View/edit/delete cookies
 
-### 🛠️ Installation Steps
+### 🔍 Recon Tools
+- **JS Extractor** - Find API endpoints in JavaScript
+- **Link Extractor** - Extract all page links
+- **Form Finder** - Discover hidden inputs
+- **Comment Finder** - Find HTML/JS comments
+- **Tech Detector** - Identify technologies
 
-1. Fork the project
-2. Clone the forked project
-3. Navigate to the cloned project directory
-4. Install the dependencies with `npm install`
-5. Run `npm run dev` to start the server
-6. Open the browser to visit the website at http://localhost:5173/
-
-> use 800 x 600 width to get the best result
-> ![img_1.png](img_1.png)
-> ![img.png](img.png)
-
----
-
-### 🛠️ Using the web extension
-
-1. Run `npm run build` to build the extension
-2. Go to extensions on chrome browser and enable `Developer mode`  
-   ![img_2.png](src/assets/img_2.png)
-3. Click on `Load Unpacked` and select `dist` folder  
-   ![img_3.png](src/assets/img_3.png)  
-   ![img_4.png](src/assets/img_4.png)
-4. Select `Thecyberhub` from extensions list to launch the webextension  
-   ![img_5.png](src/assets/img_5.png)
+### 🛠️ Utility Tools
+- **Regex Tester** - Test patterns with highlighting
+- **Timestamp** - Unix ↔ Human time conversion
+- **UUID Generator** - v4 UUID generation
+- **IP Calculator** - CIDR/subnet calculations
+- **Beautifier** - Format JSON/JS/HTML/CSS/XML
 
 ---
 
-> If you are new to Git and GitHub then must check out **[git-github-practice](https://github.com/CryptoverseWeb3/git-github-practice)** repository **first** and contribute to it before you contributing to other open-source projects.
+## Installation
 
-## 👨‍💻 Contributing
+### Chrome Web Store
+*(Coming Soon)*
 
-- Contributions make the open source community such an amazing place to learn, inspire, and create.
-- Any contributions you make are **truly appreciated**.
-- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
+### Manual Installation (Chrome)
 
-## 🛡️ License
+```bash
+git clone https://github.com/thecyberhub/TheCyberX.git
+cd TheCyberX
+npm install
+npm run build
+```
 
-TheCyberX is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. Open `chrome://extensions/`
+2. Enable **Developer mode**
+3. Click **Load unpacked**
+4. Select the `dist/` folder
 
-## 🙏 Support
+### Firefox Add-ons
+*(Coming Soon)*
 
-This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
+### Manual Installation (Firefox)
+
+```bash
+npm run build:firefox
+```
+
+1. Open `about:debugging#/runtime/this-firefox`
+2. Click **Load Temporary Add-on**
+3. Select `dist-firefox/manifest.json`
 
 ---
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Development with hot reload
+npm run dev
+
+# Build for Chrome
+npm run build
+
+# Build for Firefox
+npm run build:firefox
+```
+
+### Tech Stack
+
+- **Framework:** React 18 + TypeScript
+- **Build:** Vite 5 + CRXJS
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Manifest:** V3 (Chrome) / V2 (Firefox)
+
+---
+
+## Contributing
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+---
+
+## Privacy
+
+TheCyberX processes all data locally. No data is sent to external servers. See [PRIVACY.md](PRIVACY.md) for details.
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE)
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://thecyberhub.org">TheCyberHub</a>
+</p>

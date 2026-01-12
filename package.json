@@ -1,30 +1,32 @@
 {
-  "name": "ThecyberX",
+  "name": "thecyberx",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
+  "description": "The all-in-one pentesting browser extension",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "build:firefox": "cross-env BROWSER=firefox vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-router-dom": "^6.4.3",
-    "react-syntax-highlighter": "^15.5.0",
-    "styled-components": "^5.3.7",
-    "react-copy-to-clipboard": "^5.0.4"
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-copy-to-clipboard": "^5.0.4",
-    "@types/react-dom": "^18.0.6",
-    "@types/react-syntax-highlighter": "^15.5.5",
-    "@types/styled-components": "^5.1.26",
-    "@vitejs/plugin-react": "^2.1.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0"
+    "@crxjs/vite-plugin": "^2.0.0-beta.28",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
   }
 }

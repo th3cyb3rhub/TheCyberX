@@ -1,0 +1,30 @@
+{
+    "name": "TheCyberX",
+    "version": "1.0.0",
+    "description": "The all-in-one pentesting browser extension - 19 tools including Encoder, Hasher, JWT Decoder, Payloads, Reverse Shells, CORS Checker & more",
+    "manifest_version": 3,
+    "author": "TheCyberHub",
+    "homepage_url": "https://github.com/thecyberhub/TheCyberX",
+    "action": {
+        "default_title": "TheCyberX - Pentesting Toolkit",
+        "default_popup": "src/popup/index.html"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "cookies",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "src/background/index.ts",
+        "type": "module"
+    },
+    "devtools_page": "src/devtools/devtools.html",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
